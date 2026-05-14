@@ -1,0 +1,62 @@
+/* Configuracion de la pantalla principal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Contenedor gigante, es solo para trabajar mas facil con el responsive*/
+#father-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Contenedor grande para todo el menu, es decir el que engloba el cuadrado y los sliders de config*/
+#menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: 90%;
+    height: 80%;
+    border: black solid 0.17vw;
+}
+
+/*Esta es la config del cuadrado al que vamos a cambiar las partes*/
+#square{
+    width: 25%;
+    border: 2px black solid;
+    aspect-ratio: 1 / 1;
+}
+
+/* Aqui empieza la configuracion de las 4 scroll bars*/
+.scroll-bars{
+    width: 24%;
+    /* height: 2%; */
+    position:absolute;
+    
+    -webkit-appearance: none;
+    background-color: white;
+    border: 0.2vh solid black;
+
+    /* aspect-ratio: 15 / 2; */
+}
+#scroll-1{
+    bottom: 73%;
+    left: 38%;
+}
+#scroll-2{
+    transform: rotate(-90deg);
+    left: 25%;
+}
+#scroll-3{
+    top: 73%;
+    left: 38%;
+}
+#scroll-4{
+    transform: rotate(-90deg);
+    right: 25%;
+}
